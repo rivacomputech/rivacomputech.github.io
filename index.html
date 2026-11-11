@@ -1295,8 +1295,9 @@ Write-Host "✔ $User offboarded." -ForegroundColor Green</code></pre>
       </div>
       <!-- TODO(Devik): create a form at https://formspree.io and replace YOUR_FORMSPREE_ID below (e.g. action="https://formspree.io/f/xyzabcd").
            Until then, Send opens the visitor's email app with the message pre-filled. -->
-      <form id="contact-form" action="https://formspree.io/f/xvkkjper" method="POST" novalidate>
+      <form id="contact-form" action="https://formspree.io/f/xvkkjper" method="POST">
         <input type="hidden" name="_subject" value="New enquiry from rivacomputech.com" />
+        <input type="hidden" name="_next" value="https://rivacomputech.com" />
         <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="m-row"><span class="m-lbl">To</span><span class="m-to"><span class="avatar xs" aria-hidden="true">DP</span><span>Devik Patel <em>&lt;rivacomputech@gmail.com&gt;</em></span></span></div>
         <div class="m-row m-from">
